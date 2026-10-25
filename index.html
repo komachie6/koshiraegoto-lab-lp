@@ -52,7 +52,7 @@ p{margin:0 0 1.2em}
 
 /* FV */
 .fv{position:relative}
-.fv-lead{padding:30px 26px 6px;text-align:center;font-size:17px;line-height:2}
+.fv-lead{padding:26px 26px 40px;text-align:center;font-size:17px;line-height:2}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font-weight:600;letter-spacing:.06em;border-radius:999px;
   padding:18px 20px;font-size:18px;line-height:1.4;transition:transform .15s,box-shadow .15s}
 .btn:active{transform:translateY(2px)}
@@ -68,7 +68,9 @@ p{margin:0 0 1.2em}
 .btn-sub{background:#fff;color:var(--wine);border:2px solid var(--wine);box-shadow:0 4px 0 #e5d6cf}
 .btn small{display:block;font-size:13px;font-weight:500;opacity:.9;letter-spacing:.04em}
 .btn::after{content:"›";margin-left:.6em;font-weight:500}
-.fv-cta{padding:14px 24px 46px}
+.fv-copy{margin:0;padding:2px 24px 0;text-align:center;font-size:20px;font-weight:600;line-height:1.7;letter-spacing:.04em;color:var(--ink)}
+.fv-copy em{font-style:normal;color:var(--terra)}
+.fv-cta{padding:14px 24px 8px}
 
 /* 共感 */
 .empathy p{font-size:17px}
@@ -87,10 +89,14 @@ p{margin:0 0 1.2em}
 .month .m span{font-size:16px}
 .month h3{font-size:20.5px;line-height:1.55;margin:0 0 14px;font-weight:600}
 .month p{font-size:16px}
-.learn{border-top:1px dashed var(--gold);padding-top:14px;margin-top:6px;font-size:15.5px}
+.learn{border-top:1px dashed var(--gold);padding-top:14px;margin:0;font-size:15.5px}
 .learn dt{font-weight:600;color:var(--green);margin:0}
 .learn dd{margin:0 0 10px}
-.tag{display:inline-block;background:#EEF2EC;color:var(--green);border-radius:6px;padding:4px 12px;font-size:15px;font-weight:600}
+.yk{background:#EEF2EC;border-radius:12px;padding:16px 16px 14px;margin:6px 0 16px}
+.yk-label{display:inline-block;background:var(--green);color:#fff;border-radius:999px;padding:2px 12px;font-size:13.5px;font-weight:600;letter-spacing:.06em}
+.yk-title{margin:8px 0 6px;font-weight:600;color:var(--green);font-size:16.5px;line-height:1.6}
+.yk-text{margin:0;font-size:15.5px;line-height:1.85}
+.yk-note{display:inline-block;margin-top:6px;font-size:14px;color:#5b5750}
 .spring-title{font-size:22px}
 .month.small .body{padding:18px 18px 20px}
 .month.small h3{font-size:18.5px}
@@ -104,6 +110,15 @@ p{margin:0 0 1.2em}
 .act img{width:120px;height:120px;object-fit:cover}
 .act h3{margin:0 0 2px;font-size:18px;color:var(--green)}
 .act p{margin:0;font-size:15px;line-height:1.75}
+
+/* お客様の声 */
+.voices{background:var(--bg)}
+.vc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;margin:0 0 16px}
+.vc-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.vc-ic{width:46px;height:46px;flex:none}
+.vc-name{font-weight:600;font-size:16px}
+.vc-title{margin:0 0 6px;font-weight:600;color:var(--terra);font-size:17.5px;line-height:1.6}
+.vc-body{margin:0;font-size:15.5px;line-height:1.9}
 
 /* 手帳 */
 .gift{background:var(--wine);color:#fff;text-align:center}
@@ -187,15 +202,16 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
 
 <!-- ===== FV ===== -->
 <header class="fv">
-  <img src="assets/fv.jpg" width="1024" height="1536" alt="">
-  <h1 class="sr-only">おいしい<wbr>ものを<wbr>食べて、<wbr>私も<wbr>家族も<wbr>元気に♡ <wbr>「おいしい！」が<wbr>増える<wbr>ほど、<wbr>毎日の<wbr>ごはんが<wbr>もっと<wbr>楽しみに<wbr>なる！<wbr> 料理人の<wbr>おいしく<wbr>作る<wbr>ひと<wbr>工夫 × 季節の<wbr>薬膳 まいに<wbr>ち薬膳・増子友紀子と<wbr>楽しむオンラインコミュニティ <span class="nw">こしらえごと.Lab</span> 11月からの<wbr>参加で<wbr>特別プレゼント！<wbr> Lab特製手帳プレゼント♡ 2026年11月スタート！</h1>
+  <img src="assets/fv.jpg" width="1024" height="1240" alt="">
+  <h1 class="sr-only">オンラインで<wbr>自宅の<wbr>キッチンから<wbr>いつでも<wbr>楽しめる<wbr> <wbr>おいしい<wbr>ものを<wbr>食べて、<wbr>私も<wbr>家族も<wbr>元気に♡ <wbr>「おいしい！」が<wbr>増える<wbr>ほど、<wbr>毎日の<wbr>ごはんが<wbr>もっと<wbr>楽しみに<wbr>なる<wbr> 10月中申し込み限定で<wbr>Lab特製手帳プレゼント <span class="nw">こしらえごと.Lab</span></h1>
 </header>
+<p class="fv-copy">今年の<wbr>冬から<br><em>私と家族</em>の<wbr>心と体を<br>もっと<wbr>大切に<wbr>していきませんか？</p>
+<div class="fv-cta"><a class="btn btn-main" href="#plans">お申し込みは<wbr>こちら</a></div>
 <div class="fv-lead">
   <p>体の<wbr>ために、<wbr>我慢したり、<wbr>難しい<wbr>ことを<wbr>頑張ったりしなくても<wbr>大丈夫。<br>
   <wbr>おいしい<wbr>料理を<wbr>楽しみながら、<wbr>季節に<wbr>合わせて<wbr>自分と<wbr>家族の<wbr>体を<wbr>いたわる。<br>
   <wbr>そんな<wbr>食卓を、<wbr>これから<wbr>始めてみませんか？</p>
 </div>
-<div class="fv-cta"><a class="btn btn-ghost" href="#lessons">冬から<wbr>春までの<wbr>お料理を見る</a></div>
 
 <!-- ===== 共感 ===== -->
 <section class="alt empathy">
@@ -250,8 +266,8 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
       <p>11月は、<wbr>味噌、<wbr>塩麹、<wbr>酒粕、<wbr>野菜麹などを<wbr>使った<wbr>発酵スープストックを<wbr>5種類作ります。</p>
       <p>食べたい<wbr>ときに、<wbr>おいしい<wbr>スープが<wbr>さっと<wbr>用意できる。<br>忙しい<wbr>日でも、<wbr>自分や<wbr>家族の<wbr>ために<wbr>温かい<wbr>一品を<wbr>出せる。</p>
       <p>そんな<wbr>嬉しい<wbr>ストックを、<wbr>一緒に<wbr>作りましょう♡</p>
+      <div class="yk"><span class="yk-label">薬膳の学び</span><p class="yk-title">冷え・乾燥・<wbr>食欲の<wbr>変化が<wbr>気に<wbr>なり始めたら</p><p class="yk-text">「脾胃・閉蔵」を<wbr>手が<wbr>かりに、<wbr>胃腸の<wbr>働きや、<wbr>疲れや<wbr>冷え、<wbr>乾燥、<wbr>食欲の<wbr>変化に<wbr>目を<wbr>向けながら、<wbr>冬に<wbr>向けて<wbr>体を<wbr>休める<wbr>考え方を<wbr>学びます。</p></div>
       <dl class="learn"><dt>お料理で<wbr>学べること</dt><dd>発酵調味料の<wbr>使い方、<wbr>素材の<wbr>うまみを<wbr>引き出すコツ、<wbr>冷凍ストックの<wbr>作り方。</dd></dl>
-      <span class="tag">薬膳の<wbr>学び：冬の<wbr>季節観・脾胃・閉蔵</span>
     </div>
   </article>
 
@@ -265,9 +281,8 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
       <span class="voice">「これ、<wbr>おうちで<wbr>作ったの？！」</span>
       <p>そんな<wbr>声が<wbr>聞こえてきそうな、<wbr>素敵な<wbr>クリスマス料理です♡</p>
       <p>料理人の<wbr>おいしく<wbr>作る<wbr>コツを<wbr>学びながら、<wbr>特別な<wbr>日の<wbr>食卓を<wbr>楽しみましょう。</p>
+      <div class="yk"><span class="yk-label">薬膳の学び</span><p class="yk-title">忙しい<wbr>年末に、<wbr>冬の<wbr>薬膳茶と<wbr>ごちそうを</p><p class="yk-text">冬の<wbr>お悩みに<wbr>すぐ<wbr>使える<wbr>薬膳茶と、<wbr>クリスマスの<wbr>料理も<wbr>家族の<wbr>心と<wbr>体を<wbr>美味しく<wbr>整える<wbr>薬膳を、<wbr>年末の<wbr>食卓に<wbr>生かせる<wbr>工夫を<wbr>楽しみます。<br><span class="yk-note">※薬膳茶は<wbr>月例勉強会で<wbr>扱います。</span></p></div>
       <dl class="learn"><dt>お料理で<wbr>学べること</dt><dd>丸鶏ローストや<wbr>ソースの<wbr>作り方、<wbr>おうちで<wbr>ごちそう<wbr>料理を<wbr>おいしく<wbr>仕上げる<wbr>工夫。</dd></dl>
-      <span class="tag">薬膳の<wbr>学び：冬の<wbr>薬膳茶</span>
-      <p class="note" style="margin-top:12px">※12月は<wbr>料理レッスン内の<wbr>15分薬膳講座は<wbr>行わず、<wbr>月例勉強会で<wbr>冬の<wbr>薬膳茶を<wbr>取り上げます。</p>
     </div>
   </article>
 
@@ -279,8 +294,8 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
       <p>寒い<wbr>日には、<wbr>あったかくておいしい<wbr>お鍋が<wbr>最高！</p>
       <p>1月は、<wbr>鶏だしを<wbr>ベースに<wbr>した<wbr>香り豊かな<wbr>麻辣湯鍋。<br>辛さも<wbr>自分<wbr>好みに<wbr>調整できるので、<wbr>家族みんなで<wbr>楽しめます。</p>
       <p>お店で<wbr>食べるような<wbr>麻辣湯を、<wbr>おうちでも<wbr>作れるようになったら<wbr>嬉しいですよね♡</p>
+      <div class="yk"><span class="yk-label">薬膳の学び</span><p class="yk-title">年明けの<wbr>食欲や<wbr>冷えが<wbr>気に<wbr>なるとき</p><p class="yk-text">「寒熱・脾胃」を<wbr>手が<wbr>かりに、<wbr>麻辣湯鍋を<wbr>楽しみながら、<wbr>自分や<wbr>家族の<wbr>好み、<wbr>その<wbr>日の<wbr>様子に<wbr>合わせた<wbr>食べ方を<wbr>楽しみます。</p></div>
       <dl class="learn"><dt>お料理で<wbr>学べること</dt><dd>鶏だしの<wbr>麻辣湯鍋、<wbr>辛さの<wbr>調整方<wbr>法、<wbr>家族で<wbr>楽しめる<wbr>味付けの<wbr>工夫。</dd></dl>
-      <span class="tag">薬膳の<wbr>学び：寒熱・脾胃</span>
     </div>
   </article>
 
@@ -288,12 +303,12 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
   <p>季節が<wbr>変われば、<wbr>おいしい<wbr>食材も<wbr>変わる。<br>冬の<wbr>お料理を<wbr>楽しんだ<wbr>あとは、<wbr>春ならではの<wbr>食卓を<wbr>楽しみましょう！</p>
 
   <article class="month small">
-    <img src="assets/m02.jpg" alt="2月 おうち薬膳カフェ5種のイメージ" loading="lazy"><p class="img-note">※写真は<wbr>イメージです</p>
+    <img src="assets/m02.jpg" alt="2月 親子で嬉しいおうち薬膳カフェレシピ5種のイメージ" loading="lazy"><p class="img-note">※写真は<wbr>イメージです</p>
     <div class="body">
       <div class="m"><b>2</b><span>月</span></div>
-      <h3>明日の<wbr>朝が<wbr>楽しみに<wbr>なる、<br>おうち薬膳カフェ5種</h3>
-      <p>ふわふわ卵や<wbr>パンに<wbr>合う<wbr>お料理。<br>いつもの<wbr>朝ごはんに<wbr>料理人の<wbr>ひと<wbr>工夫を<wbr>取り入れて、<wbr>おうちで<wbr>カフェ気分を<wbr>楽しみます。</p>
-      <span class="tag">薬膳の<wbr>学び：立春</span>
+      <h3>明日の<wbr>朝が<wbr>楽しみに<wbr>なる、<br>親子で<wbr>嬉しい<wbr>おうち薬膳カフェレシピ5種</h3>
+      <p>簡単美味しい<wbr>カフェごはんを<wbr>薬膳に。<br>いつもの<wbr>朝ごはんに<wbr>料理人の<wbr>ひと<wbr>工夫を<wbr>取り入れて、<wbr>おうちで<wbr>カフェ気分を<wbr>楽しみます。</p>
+      <div class="yk"><span class="yk-label">薬膳の学び</span><p class="yk-title">冷えや<wbr>寒暖差が<wbr>気に<wbr>なる朝に</p><p class="yk-text">立春を<wbr>節目に、<wbr>春へ<wbr>向かう<wbr>季節の<wbr>変化を<wbr>学び、<wbr>薬膳的に<wbr>朝を<wbr>元気に<wbr>心地よく<wbr>始める<wbr>ための<wbr>家族の<wbr>食卓を<wbr>楽しみます。</p></div>
     </div>
   </article>
   <article class="month small">
@@ -302,7 +317,7 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
       <div class="m"><b>3</b><span>月</span></div>
       <h3>春野菜が<wbr>もっと<wbr>好きに<wbr>なる、<br>春色薬膳デリ5種</h3>
       <p>春の<wbr>食材を<wbr>使った、<wbr>彩り豊かな<wbr>おいしい<wbr>デリ。<br>パンにも<wbr>ごはんにも<wbr>合わせやすい、<wbr>春らしい<wbr>お料理です。</p>
-      <span class="tag">薬膳の<wbr>学び：春の風</span>
+      <div class="yk"><span class="yk-label">薬膳の学び</span><p class="yk-title">春の<wbr>ムズムズや、<wbr>季節の<wbr>変化が<wbr>気に<wbr>なる頃</p><p class="yk-text">中医学の<wbr>「風」の<wbr>考え方に<wbr>ふれながら、<wbr>季節の<wbr>変わり目の<wbr>春の<wbr>特徴や<wbr>食材の<wbr>性質、<wbr>選び方を<wbr>学びます。</p></div>
     </div>
   </article>
   <article class="month small">
@@ -311,7 +326,7 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
       <div class="m"><b>4</b><span>月</span></div>
       <h3>いつもの<wbr>和食が<wbr>もっと<wbr>好きに<wbr>なる、<br>和食薬膳ごはん5種</h3>
       <p>身近なだしと<wbr>味噌の<wbr>おいしさを<wbr>引き出して、<wbr>いつもの<wbr>和食を<wbr>もっとおいしく。<br>毎日の<wbr>食卓にも<wbr>取り<wbr>入れやすい春の<wbr>和ごはんを<wbr>楽しみます。</p>
-      <span class="tag">薬膳の<wbr>学び：新生活の<wbr>食養生</span>
+      <div class="yk"><span class="yk-label">薬膳の学び</span><p class="yk-title">新生活の<wbr>気疲れや<wbr>忙しさを<wbr>感じる<wbr>時期に</p><p class="yk-text">新生活の<wbr>食養生を<wbr>学び、<wbr>気疲れや<wbr>忙しさを<wbr>感じる<wbr>日にも<wbr>続けやすいだしや<wbr>味噌を<wbr>使った<wbr>薬膳和ごはんを<wbr>楽しみます。</p></div>
     </div>
   </article>
   <p class="note">※春の<wbr>薬膳テーマは<wbr>予定です。<wbr>正式な<wbr>内容は<wbr>確定後に<wbr>ご案内します。<br>※薬膳は<wbr>中医学の<wbr>伝統理論に<wbr>基づく<wbr>日々の<wbr>食養生です。<wbr>医療上の<wbr>診断や<wbr>治療に<wbr>代わる<wbr>ものでは<wbr>ありません。</p>
@@ -346,6 +361,28 @@ footer{padding:28px 24px 36px;text-align:center;font-size:13px;color:#7b766d;bac
   <p><span class="strong">おいしく<wbr>食べる<wbr>ことも、<wbr>自分を<wbr>いたわる<wbr>ことも、<wbr>楽しく<wbr>暮らすことも。</span></p>
   <p>全部、<wbr>毎日の<wbr>中で<wbr>大切に<wbr>していけたら<wbr>嬉しいですよね♡</p>
   <p class="note">※参加期間中は、<wbr><span class="nw">こしらえごと.Lab</span>の<wbr>活動すべてに<wbr>参加できます。</p>
+</section>
+
+<!-- ===== お客様の声 ===== -->
+<section class="voices">
+  <span class="eyebrow"><span class="nw">こしらえごと.Lab</span>メンバーの声</span>
+  <h2 class="h2">毎日の<wbr>ごはんが、<br>楽しみに<wbr>変わりました♡</h2>
+  <div class="vc">
+    <div class="vc-head"><svg class="vc-ic" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="28" fill="#C4664A"/><circle cx="28" cy="22" r="9" fill="#FBFAF6"/><path d="M12 46c2-9 9-13 16-13s14 4 16 13" fill="#FBFAF6"/></svg><span class="vc-name">Aさん</span></div>
+    <p class="vc-title">「スーパーが<wbr>宝石箱に<wbr>見える！」</p>
+    <p class="vc-body">仕事帰りの<wbr>電車の<wbr>中で、<wbr>リールや<wbr>書籍を<wbr>参考に<wbr>晩ごはんの<wbr>支度を<wbr>考えるように。<wbr>スーパーが<wbr>宝石箱に<wbr>見えます！<wbr>料理が<wbr>好きに<wbr>なった<wbr>こと、<wbr>薬膳の<wbr>知識が<wbr>学べる<wbr>こと、<wbr>同じ世代・<wbr>同じ<wbr>悩みを<wbr>持つ方<wbr>々と<wbr>気持ちを<wbr>共有できる<wbr>ところが<wbr>嬉しいです。</p>
+  </div>
+  <div class="vc">
+    <div class="vc-head"><svg class="vc-ic" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="28" fill="#1F3A2B"/><circle cx="28" cy="22" r="9" fill="#FBFAF6"/><path d="M12 46c2-9 9-13 16-13s14 4 16 13" fill="#FBFAF6"/></svg><span class="vc-name">Bさん</span></div>
+    <p class="vc-title">「料理を<wbr>作るのが<wbr>楽しすぎて」</p>
+    <p class="vc-body">おまもりレシピなどの<wbr>料理を<wbr>作るのが<wbr>楽しすぎて、<wbr>毎日<wbr>元気に<wbr>楽しくなりました。<wbr>休みの<wbr>日は<wbr>だいたい<wbr>料理しています。<wbr>ゆき<wbr>こさんと<wbr>会って<wbr>話せた<wbr>こと、<wbr>ラボのみなさんと<wbr>つながれた<wbr>ことが<wbr>嬉しかったです。</p>
+  </div>
+  <div class="vc">
+    <div class="vc-head"><svg class="vc-ic" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="28" fill="#B8935A"/><circle cx="28" cy="22" r="9" fill="#FBFAF6"/><path d="M12 46c2-9 9-13 16-13s14 4 16 13" fill="#FBFAF6"/></svg><span class="vc-name">Cさん</span></div>
+    <p class="vc-title">「今月も<wbr>楽しみが<wbr>先に<wbr>ある」</p>
+    <p class="vc-body">まず楽しみが<wbr>増えました。<wbr>カレンダーに<wbr>ラボの<wbr>予定を<wbr>書いて、<wbr>今月も<wbr>楽しみが<wbr>先に<wbr>ある<wbr>ことが<wbr>嬉しくなります。<wbr>おまもりレシピも<wbr>毎月、<wbr>どんな<wbr>味なんだろう、って<wbr>楽しみです。</p>
+  </div>
+  <p class="note">※ラボメンバーへの<wbr>アンケートから<wbr>一部<wbr>抜粋しています。<wbr>感想は<wbr>個人の<wbr>ものです。</p>
 </section>
 
 <!-- ===== 手帳 ===== -->
